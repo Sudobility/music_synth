@@ -6,7 +6,7 @@
       "name": "@sudobility/music_synth",
       "devDependencies": {
         "@eslint/js": "~10.0.1",
-        "@sudobility/music_types": "^0.13.52",
+        "@sudobility/music_types": "^0.13.62",
         "@types/node": "~26.6.5",
         "@typescript-eslint/eslint-plugin": "~8.72.0",
         "@typescript-eslint/parser": "~8.72.0",
@@ -20,7 +20,7 @@
         "vitest": "~4.1.12",
       },
       "peerDependencies": {
-        "@sudobility/music_types": "^0.13.60",
+        "@sudobility/music_types": "^0.13.62",
         "js-synthesizer": "^1.13.0",
       },
       "optionalPeers": [
@@ -103,9 +103,9 @@
 
     "@standard-schema/spec": ["@standard-schema/spec@1.1.0", "", {}, "sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w=="],
 
-    "@sudobility/music_types": ["@sudobility/music_types@0.13.52", "", { "peerDependencies": { "@sudobility/types": "^1.9.68", "immer": "^10.0.0 || ^11.0.0", "zod": "^4.0.0" } }, "sha512-Ti4+1yrOFEz0w5zl/unkvS5f9ZfIATQSmnRz02nIvlRPBM+qUXSJwYr5Oc+4ts9FDLQ5c6TaXuUhO8gHBHojYQ=="],
+    "@sudobility/music_types": ["@sudobility/music_types@0.13.62", "https://npm.pkg.github.com/download/@sudobility/music_types/0.13.62/e3c2aa29657c24c3c7b1bb81762fcb22c140d1b1", { "peerDependencies": { "@sudobility/types": "^1.9.78", "immer": "^10.0.0 || ^11.0.0", "zod": "^4.0.0" } }, "sha512-JCYIggLmiXDL0CBb8yp0uewc1GcUjvZDseC6kC05qHCq8VDCGpptiM8BdPSdIFVnGQrUrqtL0XUJidCfs5dIuw=="],
 
-    "@sudobility/types": ["@sudobility/types@1.9.71", "", {}, "sha512-BhgnvH5zF3HEiknZYbhtaMEuQ9q18qBFJErg8hzObJaHlXp95RauswKLeoHl9viVCFtpiWhOUPiT5kA5/iR7bQ=="],
+    "@sudobility/types": ["@sudobility/types@1.9.71", "https://npm.pkg.github.com/@sudobility/types/-/types-1.9.71.tgz", {}, "sha512-BhgnvH5zF3HEiknZYbhtaMEuQ9q18qBFJErg8hzObJaHlXp95RauswKLeoHl9viVCFtpiWhOUPiT5kA5/iR7bQ=="],
 
     "@types/chai": ["@types/chai@5.2.3", "", { "dependencies": { "@types/deep-eql": "*", "assertion-error": "^2.0.1" } }, "sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA=="],
 
