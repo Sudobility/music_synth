@@ -1,0 +1,71 @@
+{
+  "name": "@sudobility/music_synth",
+  "version": "0.0.1",
+  "description": "Web soundfont synth for ScoreSmith: libfluidsynth (WebAssembly) in an AudioWorklet, as a SynthBackend",
+  "author": "Sudobility",
+  "license": "BUSL-1.1",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "CLAUDE.md"
+  ],
+  "keywords": [
+    "scoresmith",
+    "music",
+    "synth",
+    "soundfont",
+    "fluidsynth",
+    "web"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.esm.json",
+    "clean": "rimraf dist",
+    "test:unit": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src",
+    "format": "prettier --write src/**/*.ts",
+    "format:check": "prettier --check src/**/*.ts",
+    "typecheck": "tsc --noEmit",
+    "verify": "bun run format:check && bun run typecheck && bun run lint && bun run test:unit && bun run build",
+    "prepublishOnly": "bun run clean && bun run verify"
+  },
+  "peerDependencies": {
+    "@sudobility/music_types": "^0.13.60",
+    "js-synthesizer": "^1.13.0"
+  },
+  "peerDependenciesMeta": {
+    "js-synthesizer": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "~10.0.1",
+    "@sudobility/music_types": "^0.13.52",
+    "@types/node": "~26.6.5",
+    "@typescript-eslint/eslint-plugin": "~8.72.0",
+    "@typescript-eslint/parser": "~8.72.0",
+    "eslint": "~10.13.0",
+    "globals": "~17.13.0",
+    "js-synthesizer": "~1.13.0",
+    "prettier": "~3.9.10",
+    "rimraf": "~6.1.3",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "~8.72.0",
+    "vitest": "~4.1.12"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sudobility/music_synth.git"
+  },
+  "dependencies": {}
+}
