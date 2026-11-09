@@ -30,8 +30,9 @@ library reaches for the other.
 
 - `bun install` — deps (then overlay a local `@sudobility/music_types` build if
   working across repos; `bun install` reinstalls it from the registry).
-- `bun run verify` — format, typecheck, lint, test, build. Before any push.
-- `bun run test` / `test:watch` — vitest (node env; Web Audio stubbed per suite).
+- `bun run verify` — format:check, typecheck, lint, test:unit, build. Before any push.
+- `bun run test:unit` / `test:watch` — vitest (node env; Web Audio stubbed per suite).
+  There is no `test` script; use `test:unit`.
 
 ## Public surface (`src/index.ts`)
 
