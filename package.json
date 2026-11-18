@@ -1,6 +1,6 @@
 {
   "name": "@sudobility/music_synth",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Web soundfont synth for ScoreSmith: libfluidsynth (WebAssembly) in an AudioWorklet, as a SynthBackend",
   "author": "Sudobility",
   "license": "BUSL-1.1",
@@ -37,7 +37,7 @@
     "prepublishOnly": "bun run clean && bun run verify"
   },
   "peerDependencies": {
-    "@sudobility/music_types": "^0.13.71",
+    "@sudobility/music_types": "^0.13.72",
     "js-synthesizer": "^1.13.0",
     "@sudobility/types": "^1.11.2"
   },
@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@eslint/js": "~10.0.1",
-    "@sudobility/music_types": "^0.13.71",
+    "@sudobility/music_types": "^0.13.72",
     "@types/node": "~26.6.5",
     "@typescript-eslint/eslint-plugin": "~8.72.0",
     "@typescript-eslint/parser": "~8.72.0",
